@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*:focus{
+    outline: none;
+}
+.section{
+    width: 100%;
+    contain: content;
+}
+ .heading{
+    color: rgba(228, 228, 46, 0.945);
+    background-color: black;
+    text-align: center;
+    padding: 50px 0;
+    text-transform: capitalize;
+    font-family: 'Akaya Telivigala', cursive;
+    letter-spacing: 2px;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.cards-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    place-content: center;
+    background-color: rgb(209, 203, 124);
+    padding: 20px 0;
+}
+.cards{
+    padding: 10px 10px;
+    display: grid;
+    place-content: center;
+}
+img{
+    transition: 0.3s;
+    transition-timing-function: linear;
+    transition-timing-function: ease-in-out;
+}
+img:hover{
+    opacity: 0.7;
+}
+
+.card{
+    height: 300px;
+    width: 400px;
+}
+.cImg{
+    height: 200px;
+    width: inherit;
+    object-fit: cover;
+    object-fit: cover;
+    
+}
+button{
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+    padding: 10px;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-timing-function: linear;
+    transition-timing-function: ease-in-out;
+}
+button:hover{
+    background-color:white;
+    color:black;
+    border: none;
+}
+@media only screen and (max-width:800px){
+    .cards-container{
+        display: grid;
+        grid-template-columns:auto;
+    }
+}
